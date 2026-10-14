@@ -1,0 +1,81 @@
+# Keep the build context small and secret-free. Images get only what the build needs.
+
+# --- Secrets and credentials ---
+pat
+*.pat
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.keystore
+id_rsa*
+id_ed25519*
+.netrc
+.npmrc
+.pypirc
+secrets/
+credentials*.json
+service-account*.json
+
+# --- VCS, tooling and docs not needed at runtime ---
+.git
+.gitignore
+.gitattributes
+.github/
+.gitlab-ci.yml
+.claude/
+CLAUDE.md
+CLAUDE.local.md
+docs/
+*.md
+!README.md
+
+# --- Docker files themselves ---
+Dockerfile*
+.dockerignore
+docker-compose*.yml
+compose*.yml
+
+# --- OS and editors ---
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# --- Dependencies (reinstalled inside the image) ---
+node_modules/
+vendor/
+.venv/
+venv/
+
+# --- Build output, caches, coverage, logs ---
+dist/
+build/
+out/
+target/
+__pycache__/
+*.py[cod]
+.cache/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.next/
+.turbo/
+coverage/
+.coverage
+htmlcov/
+logs/
+*.log
+tmp/
+
+# --- Local data and infra state ---
+*.sqlite
+*.sqlite3
+*.db
+.terraform/
+*.tfstate
+*.tfstate.*
