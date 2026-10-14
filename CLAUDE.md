@@ -46,5 +46,5 @@ Each agent has `memory: project`, so its notes persist in `.claude/agent-memory/
 
 - Keep this file short and project-specific; put standing rules in `.claude/rules/`.
 - New skill: `.claude/skills/<name>/SKILL.md` with `name` and `description` frontmatter.
-- Git conventions: `.claude/rules/git.md`.
+- Commits: `/commit` skill (`.claude/skills/commit/`); git guardrails in `.claude/rules/git.md`.
 - Personal overrides go in `.claude/settings.local.json` and `CLAUDE.local.md` (gitignored).
