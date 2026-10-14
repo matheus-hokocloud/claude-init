@@ -21,8 +21,9 @@ building anything non-trivial.
 .claude/
 ├── settings.json   shared settings (permissions, hooks, env) — committed
 ├── rules/          *.md, auto-loaded as instructions; scope with `paths:` frontmatter
-├── agents/         *.md subagents (frontmatter: name, description, tools, model, memory)
+├── agents/         *.md subagents (frontmatter: name, description, tools, model, memory, hooks)
 ├── agent-memory/   per-agent persistent memory, written by agents with `memory: project`
+├── hooks/          scripts run by hooks (e.g. review-agent's write guard)
 └── skills/         <name>/SKILL.md, invoked on demand or as /<name>
 ```
 
