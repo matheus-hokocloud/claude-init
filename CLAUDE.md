@@ -49,3 +49,9 @@ Each agent has `memory: project`, so its notes persist in `.claude/agent-memory/
 - New skill: `.claude/skills/<name>/SKILL.md` with `name` and `description` frontmatter.
 - Commits: `/commit` skill (`.claude/skills/commit/`); git guardrails in `.claude/rules/git.md`.
 - Personal overrides go in `.claude/settings.local.json` and `CLAUDE.local.md` (gitignored).
+
+## Applying this setup elsewhere
+
+This repo is the reference setup. `/adopt-setup [dir]` (`adopt-setup/SKILL.md`, symlinked to
+`~/.claude/skills/`) applies it to another project; `ADOPTING.md` says what to copy, adapt and
+leave out. Neither this section, the skill nor `ADOPTING.md` is copied into the target.
