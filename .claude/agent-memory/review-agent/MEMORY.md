@@ -1,0 +1,1 @@
+- [claude-init is a template](project_claude_init_template.md) — adoption flow, risk as test target, fail-closed hook checks need a positive case
